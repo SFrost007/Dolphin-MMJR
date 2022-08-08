@@ -2,8 +2,8 @@
 <resources>
 
     <!-- Title of the app -->
-    <string name="app_name">Dolphin |MMJR|</string>
-    <string name="app_name_version">Dolphin |MMJR| - 11505</string>
+    <string name="app_name">Dolphin |SJJF|</string>
+    <string name="app_name_version">Dolphin |SJJF| - 11505</string>
     <string name="host">app</string>
     <string name="scheme">dolphinemu</string>
 

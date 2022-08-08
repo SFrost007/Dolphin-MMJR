@@ -838,7 +838,7 @@ void UpdateTitle()
 
   if(g_ActiveConfig.bShowFPS)
   {
-    S_FPS = StringFromFormat("|MMJR| FPS: %.0f | %.0f%% |",
+    S_FPS = StringFromFormat("|SJJF| FPS: %.0f | %.0f%% |",
                             perf_stats.FPS, perf_stats.Speed);
   }
 
