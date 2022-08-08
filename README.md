@@ -1,6 +1,31 @@
 Discord = https://discord.gg/NZTQRpy5B3
 
-ANNOUNCEMENT (For new users):
+### Fork Notes
+
+This fork is a quick hack to add a new runtime button for GameCube emulation
+which "replugs" the memorycardfolder. This works around issues in some games
+(e.g. Wind Waker) where the memory card will be detected as corrupted after
+using save states, and allows a regular save to be recovered.
+
+1. Load the savestate
+2. Tap the GameCube logo button on the toolbar
+3. Use the regular in-game save functionality
+
+Some games (again e.g. Wind Waker) may think that the memory card is "different"
+than it was originally and still refuse to save. In this case delete the memory
+card file from `Internal/Dolphin-MMJR/[region]/Card A/[game].gci` and repeat
+steps 2-3 above.
+
+This fork is also "rebranded" with an altered applicationId to allow it to be
+installed side-by-side with the regular version of MMJR. This is not an attempt
+to take anything away from MMJR itself and purely for convenience of having the
+"real" version alongside this altered one. This will still save data into the
+same `Internal/Dolphin-MMJR` folder, so can be used to recover save games from
+states created in the main build.
+
+
+
+### ANNOUNCEMENT (For new users):
 
 =============================
 
