@@ -371,6 +371,10 @@ public final class EmulationActivity extends AppCompatActivity
 				showUnpauseEmulationButton();
 				break;
 
+			case R.id.menu_emulation_replug_memcard:
+				NativeLibrary.ReplugMemCard();
+				break;
+
 			case R.id.menu_emulation_unpause:
 				sUserPausedEmulation = false;
 				NativeLibrary.UnPauseEmulation();

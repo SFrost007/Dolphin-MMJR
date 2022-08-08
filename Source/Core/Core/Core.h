@@ -57,6 +57,8 @@ bool WantsDeterminism();
 void SetState(State state);
 State GetState();
 
+void ReplugMemCard();
+
 struct PerformanceStatistics
 {
   float FPS;

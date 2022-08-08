@@ -250,6 +250,11 @@ JNIEXPORT void JNICALL Java_org_dolphinemu_dolphinemu_NativeLibrary_StopEmulatio
   s_update_main_frame_event.Set();
 }
 
+JNIEXPORT void JNICALL Java_org_dolphinemu_dolphinemu_NativeLibrary_ReplugMemCard(JNIEnv*, jclass) {
+  std::lock_guard<std::mutex> guard(s_host_identity_lock);
+  Core::ReplugMemCard();
+}
+
 JNIEXPORT jboolean JNICALL Java_org_dolphinemu_dolphinemu_NativeLibrary_IsRunning(JNIEnv* env,
                                                                                   jclass)
 {

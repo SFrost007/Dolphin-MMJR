@@ -314,6 +314,7 @@
     <string name="preferences_extensions">Extension Bindings</string>
 
     <!-- Emulation Menu -->
+    <string name="replug_memcard">Replug Memcard</string>
     <string name="pause_emulation">Pause Emulation</string>
     <string name="unpause_emulation">Unpause Emulation</string>
     <string name="emulation_screenshot">Take Screenshot</string>

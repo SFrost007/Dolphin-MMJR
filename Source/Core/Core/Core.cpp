@@ -44,6 +44,7 @@
 #include "Core/HW/CPU.h"
 #include "Core/HW/DSP.h"
 #include "Core/HW/EXI/EXI.h"
+#include "Core/HW/EXI/EXI_Device.h"
 #include "Core/HW/GCKeyboard.h"
 #include "Core/HW/GCPad.h"
 #include "Core/HW/HW.h"
@@ -640,6 +641,10 @@ void SetState(State state)
 
   if (s_on_state_changed_callback)
     s_on_state_changed_callback(GetState());
+}
+
+void ReplugMemCard() {
+  ExpansionInterface::ChangeDevice(0, ExpansionInterface::EXIDEVICE_MEMORYCARDFOLDER, 0);
 }
 
 State GetState()
